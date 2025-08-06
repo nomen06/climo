@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Minecraftia';
+    src: url('Minecraftia-Regular.ttf') format('truetype');
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('https://i.pinimg.com/1200x/3c/ef/6d/3cef6d1937a4be979b1de0cc21fc8645.jpg');
+  font-family: 'Minecraftia', sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  
+h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 5rem;
+    margin-top: 50px;
+}
+.container {
+    margin: 0 auto;
+    width: 250px;
+    display : flex;
+    align-items: center;
+}
+input[type="text"] {
+    font-family: 'Minecraftia', sans-serif;
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    box-shadow: #3d3c3c 0px 0px 2px;
+}
+input[type="text"]:focus {
+    border-color: #f7faf7;
+    outline: none;
+}
+.sub-button {
+    margin:  auto;
+    width: 150px;;
+    font-family: 'Minecraftia', sans-serif;
+    color: #131313;
+    border: 1px solid #787676;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #f7faf7;
+}
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 3px solid #888;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Minecraftia', sans-serif;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: black;
+}

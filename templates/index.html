@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 class="sitename">climo</h1>
+    <div class="container">
+        <form id="cityname">
+            <input type="text" id="city" name="city" placeholder="city name">
+            <button type="submit" class="sub-button">fetch climo talks!</button>
+        </form>
+    </div>
+    <div id="weather-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button" id="close-popup">&times;</span>
+            <div id="weather-info" class="weather-output">
+                <h2>Weather Information</h2>
+                <p id="city-name"></p>
+                <p id="temperature"></p>
+                <p id="description"></p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static',filename='script.js') }}"></script>
+</body>
+</html>
